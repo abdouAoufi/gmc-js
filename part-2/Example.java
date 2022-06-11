@@ -1,10 +1,10 @@
 class Student {
-	int age;
+	private int age;
 	String name;
 	int score;
 
-	public Student(int age, String name, int score) {
-		this.age = age;
+	public Student(int a, String name, int score) {
+		this.age = a;
 		this.name = name;
 		this.score = score;
 	}

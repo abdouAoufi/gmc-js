@@ -74,3 +74,74 @@ const obj = {
 for (x in obj) {
     console.log(obj[x]);
 }
+
+const PERSON = {
+    primaryInfo: {
+        name: "Tarek",
+        age: 23,
+    },
+    secondaryInfo: {
+        wilaya: { city: "Dar el Bidha", name: "Alger" },
+        street: "Aissat Aidir",
+    },
+    sayHi: function() {
+        console.log("Hi it's me");
+    },
+    sayMyName: function() {
+        console.log(this.primaryInfo.name);
+    },
+};
+const PERSON2 = {
+    primaryInfo: {
+        name: "Mourad",
+        age: 23,
+    },
+    secondaryInfo: {
+        wilaya: { city: "Dar el Bidha", name: "Alger" },
+        street: "Aissat Aidir",
+    },
+    sayHi: function(s) {
+        console.log("Hi it's me", s);
+    },
+    sayMyName: function() {
+        console.log(this.primaryInfo.name);
+    },
+};
+
+// console.log(PERSON.secondaryInfo.wilaya.city);
+
+PERSON2.sayHi("::::");
+PERSON.sayMyName(); // => Tarek
+PERSON2.sayMyName(); // => Mourad
+
+const primary = {
+    name: "Samir",
+    age: 45,
+};
+
+const secondary = {
+    wilaya: "boumerdes",
+};
+
+const fullPerson = {
+    // 2001
+    name: primary.name,
+    age: primary.age,
+    wilaya: secondary.wilaya,
+};
+
+const fullPerson2020 = {
+    ...primary,
+    ...secondary,
+};
+
+console.log(fullPerson2020);
+
+const info =
+    "This person has name " +
+    fullPerson2020.name +
+    " has  " +
+    fullPerson2020.age +
+    " years old"; // 2009
+const info2022 = `This person has name ${fullPerson2020.name} has ${fullPerson2020.age} years old`; // 2020
+console.log(info2022);
