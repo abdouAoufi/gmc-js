@@ -10,7 +10,7 @@ const student2 = {
     score: 13,
 };
 
-console.log(student2.score);
+ 
 
 function studentFactory(name = "No name", age = "No age", score = "No Score") {
     const student = {
@@ -48,6 +48,9 @@ function findLosers(list) {
             return item;
         }
     });
+    console.log("🚀 ~ file: object.js ~ line 51 ~ newList ~ newList", newList)
+    console.log("🚀 ~ file: object.js ~ line 51 ~ newList ~ newList", newList)
+    console.log("🚀 ~ file: object.js ~ line 51 ~ newList ~ newList", newList)
     console.log(newList);
 }
 
@@ -144,4 +147,3 @@ const info =
     fullPerson2020.age +
     " years old"; // 2009
 const info2022 = `This person has name ${fullPerson2020.name} has ${fullPerson2020.age} years old`; // 2020
-console.log(info2022);
