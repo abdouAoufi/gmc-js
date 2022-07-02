@@ -11,6 +11,8 @@ let lastName = "";
 let email = "";
 let password = "";
 
+const database = []; // ! our database
+
 /* ----------- EVENT LISTENERS ----------- */
 
 const callback = () => {
@@ -28,7 +30,7 @@ const callback = () => {
   );
 
   if (validationResult === false) {
-    return;
+    return; // ! Exit function if validation fails
   }
 
   const user = {
@@ -37,6 +39,9 @@ const callback = () => {
     email: email,
     password, // ES6 😍
   };
+
+  database.push(user);
+  emptyInputs();
 };
 
 const validInformation = (firstName, lastName, email, password) => {
@@ -57,6 +62,13 @@ const validInformation = (firstName, lastName, email, password) => {
     return false;
   }
   return true;
+};
+
+const emptyInputs = function () {
+  firstNameInp.value = "";
+  lastNameInp.value = "";
+  emailInp.value = "";
+  passwordInput.value = "";
 };
 
 signupBtn.addEventListener("click", callback);

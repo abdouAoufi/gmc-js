@@ -1,39 +1,42 @@
 nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 a {
-    text-decoration: none;
-    font-weight: 400;
-    color: teal;
+  text-decoration: none;
+  font-weight: 400;
+  color: teal;
 }
 
 #title {
-    text-align: center;
-    margin-top: 3rem;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid rgb(67, 75, 83);
+  border-radius: 6px;
 }
 
 .form-container input {
-    padding: 1rem 0.5rem;
-    margin: 1rem;
-    font-weight: 500;
-    color: rgb(67, 75, 83);
-    border-radius: 6px;
-    border: 1px solid rgb(67, 75, 83);
+  padding: 1rem 0.5rem;
+  margin: 1rem;
+  font-weight: 500;
+  color: rgb(67, 75, 83);
+  border-radius: 6px;
+  border: 1px solid rgb(67, 75, 83);
 }
 
 .form-container button {
-    padding: 0.7rem 1rem;
-    font-weight: 500;
-    color: rgb(67, 75, 83);
-    border-radius: 6px;
-    background-color: aquamarine;
-    cursor: pointer;
+  padding: 0.7rem 1rem;
+  font-weight: 500;
+  color: rgb(67, 75, 83);
+  border-radius: 6px;
+  background-color: aquamarine;
+  cursor: pointer;
 }
