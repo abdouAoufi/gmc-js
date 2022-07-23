@@ -3,7 +3,16 @@ import React from "react";
 import database from "./images";
 
 const Gallery = () => {
-  const [index, setIndex] = React.useState(0); // []
+  const [index, setIndex] = React.useState(
+    Math.round(Math.random() * (database.length - 1))
+  ); // []
+  const [imgSrc, setImgSrc] = React.useState(null);
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setImgSrc(database[index]);
+    }, 2000);
+  }, []);
 
   const next = () => {
     if (index === database.length - 1) {
@@ -14,18 +23,18 @@ const Gallery = () => {
   };
   const previous = () => {
     if (index === 0) {
-      return setIndex(0)
+      return setIndex(0);
     }
     setIndex(index - 1);
   };
 
   return (
     <div>
-      <img height='600px' width='600px' src={database[index]} />
-      <div>
-        <button onClick={previous}>previous</button>
-        <button onClick={next}>next</button>
-      </div>
+      {imgSrc === null ? (
+        <h1>1</h1>
+      ) : (
+        <img height='300px' width='300px' src={imgSrc} />
+      )}
     </div>
   );
 };

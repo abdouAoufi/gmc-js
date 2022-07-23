@@ -3,8 +3,10 @@ import Gallery from "./Gallery";
 
 const App = () => {
   return (
-    <div>
-      <Counter />
+    <div style={{ display: "flex" , justifyContent : "space-between"}}>
+      {/* <Counter /> */}
+      <Gallery />
+      <Gallery />
       <Gallery />
     </div>
   );
