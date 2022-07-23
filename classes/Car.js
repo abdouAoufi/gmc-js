@@ -42,3 +42,19 @@ mercedes.getColor(); // => gray
 mercedes.changeColor("white");
 mercedes.getColor(); // => white
 bmw.getColor();
+
+class BMW extends Car {
+    constructor(model, color) {
+        super("BMW", model, color);
+    }
+
+    initTurbo() {
+        console.log(this.color)
+        console.log("Turbo enabled .....");
+    }
+}
+
+const bmwcar = new BMW("655i", "black");
+
+bmwcar.
+bmwcar.initTurbo();

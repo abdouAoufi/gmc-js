@@ -35,6 +35,13 @@ const video1 = new Video(
     "https://i.ytimg.com/vi/pWnJY_Wkde4/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDACvggHdnajGc2PD-Oa1dPu69Ulw",
     "12-13-2021"
 );
+const video2 = new Video(
+    "introduction to javascrpt",
+    123141,
+    "mentor",
+    "https://i.ytimg.com/vi/pWnJY_Wkde4/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDACvggHdnajGc2PD-Oa1dPu69Ulw",
+    "12-13-2021"
+);
 
 
 console.log(video1)
