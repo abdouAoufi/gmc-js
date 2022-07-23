@@ -1,0 +1,11 @@
+h2 {
+  text-align: left;
+}
+
+button {
+  background-color: teal;
+  color: white;
+  font-weight: 600;
+  font-size: x-large;
+  margin: 12px 24px;
+}
